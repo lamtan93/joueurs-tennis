@@ -2,6 +2,7 @@ import React from 'react';
 import ListeJoueursTennis from './ListeJoueursTennis';
 import { useSelector, } from 'react-redux';
 import { joueursSelector, listeJoueursSearchByName } from '../redux/selectors';
+import PropType from 'prop-types';
 
 const JoueursTennisView = ({
     words,
@@ -30,6 +31,19 @@ const JoueursTennisView = ({
         </div>
     )
 }
+
+JoueursTennisView.propTypes = {
+    words: PropType.shape({
+        LOADING_LABEL: PropType.string,
+        ERROR: PropType.shape({
+            LIBELLE_ERROR_GEN: PropType.string
+        })
+    }),
+};
+
+JoueursTennisView.defaultProps = {
+    words: {},
+};
 
 
 export default JoueursTennisView;

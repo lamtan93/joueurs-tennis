@@ -5,8 +5,8 @@ import '../../config/axios-conf';
 import * as axios from 'axios';
 import listJoueursActions from '../../redux/actions/listJoueursActions';
 import joueursTennisDico from '../common/joueursTeninsDico';
-import '../../App.css';
-import '../../App-mob.css';
+import '../../style/App.css';
+import '../../style/App-mob.css';
 
 const {
     fetchListJoueursDataRequest,

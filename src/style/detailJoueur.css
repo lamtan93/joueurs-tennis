@@ -19,7 +19,7 @@
   
   .hisImg-detail {
     background-color: black;
-     background: url('./img/Djokovic.png') ;
+     background: url('../img/Djokovic.png') ;
     flex: 1
   }
   
@@ -97,7 +97,7 @@
 }
 
 .drapeau {
-    background: url('./img/SerbieDrapeau.png') center center ;
+    background: url('../img/SerbieDrapeau.png') center center ;
     height: 180px;
 }
 

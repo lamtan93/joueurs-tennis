@@ -49,7 +49,7 @@
     .hisImg {
         flex: 2;
         width: 100%;
-        background: url('./img/Djokovic.png') top center;
+        background: url('../img/Djokovic.png') top center;
       }
       
       .hisInfos {

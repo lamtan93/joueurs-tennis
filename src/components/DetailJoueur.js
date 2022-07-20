@@ -1,5 +1,4 @@
 import React from 'react';
-import novakJoueur from '../img/Djokovic.png';
 
 const DetailJoueur = () => {
     return(

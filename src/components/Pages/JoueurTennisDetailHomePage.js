@@ -1,7 +1,8 @@
 import React from 'react';
 import joueursTennisDico from '../common/joueursTeninsDico';
 import JoueursTennisDetailView from '../JoueursTennisDetailView';
-import '../../detailJoueur.css';
+import '../../style/detailJoueur.css';
+import '../../style/detailJoueur-mob.css';
 
 class JoueursTennisDetailHomePage extends React.Component {
     render(){

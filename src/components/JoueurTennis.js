@@ -1,4 +1,5 @@
 import React from 'react';
+import PropType from 'prop-types';
 
 const JoueurTennis = ({
     words,
@@ -30,5 +31,22 @@ const JoueurTennis = ({
     </>
     )
 }
+
+
+
+JoueurTennis.propTypes = {
+    words: PropType.shape({
+        RANK_LABEL: PropType.string,
+        POINTS_LABEL: PropType.string,
+        COUNTRY_LABEL: PropType.string,
+    }),
+
+    joueur: PropType.object,
+};
+
+JoueurTennis.defaultProps = {
+    words: {},
+    joueur: null,
+};
 
 export default JoueurTennis;

@@ -1,0 +1,76 @@
+@media screen and (max-width: 1094px) {
+  .detail-joueur-container{
+    height: 100vh;
+    display: flex;
+    flex-flow: column wrap;
+    width: 853px;
+    gap: 10px;
+  }
+
+  .tournaments{
+    font-size: 13px;
+    font-weight: 900;
+  }
+
+
+  .hisImg-detail{
+    height: 210px;
+  }
+
+  .infos-career{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+  }
+
+  .infos-gen-cols{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+  }
+
+  .detail-infos-gen{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: stretch;
+  }
+
+  .detail-infos-gen-name{
+    text-align: center;
+  }
+
+}
+
+
+@media screen and (max-width: 760px) {
+  .detail-joueur-container{
+    width: 700px;
+  }
+}
+
+@media screen and (max-width: 645px) {
+  .detail-joueur-container{
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .detail-joueur-container{
+    width: 430px;
+  }
+
+  .infos-career{
+    height: 232px;
+  }
+
+  .drapeau{
+    height: 163px;
+    width: 190px;
+  }
+  
+}
+
+
+
+

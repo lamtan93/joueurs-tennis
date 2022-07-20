@@ -1,7 +1,7 @@
 import React from 'react';
 import JoueursTennisFilter from './JoueursTennisFilter';
 import JoueurTennis from './JoueurTennis';
-
+import PropType from 'prop-types';
 
 const ListeJoueursTennis = ({
     words,
@@ -10,9 +10,13 @@ const ListeJoueursTennis = ({
     return (
         <>
             <div className='filters'>
-                <JoueursTennisFilter />
+                <JoueursTennisFilter 
+                 words={words} />
             </div>
-            {listJoueursData?.map( joueur => (
+
+            {listJoueursData.length > 0 ? (
+                <>
+                {listJoueursData?.map( joueur => (
                 <div 
                 key={joueur?.id}
                 className='joueur'>
@@ -21,9 +25,25 @@ const ListeJoueursTennis = ({
                     joueur={joueur}
                    />
                 </div> 
-            ))}
+            ))}    
+                </>
+            ) : (
+               <h1>{words?.PLAYER_NOT_FOUND}</h1> 
+            )}
+            
         </>
     )
 }
+
+
+ListeJoueursTennis.propTypes = {
+    words: PropType.object,
+    listJoueursData: PropType.array,
+};
+
+ListeJoueursTennis.defaultProps = {
+    words: {},
+    listJoueursData: [],
+};
 
 export default ListeJoueursTennis;
