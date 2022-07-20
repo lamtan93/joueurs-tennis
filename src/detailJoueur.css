@@ -1,0 +1,111 @@
+.joueursTennisDetailView {
+    background: linear-gradient(45deg, #744d05, #bb6d61);
+    height: 100vh;
+    display: block;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.detail-joueur-container {
+    /* height: 100vh; */
+    display: flex;
+    flex-flow: row wrap;
+    height: 600px;
+    background-color: white;
+    width: 1200px;
+  }
+  
+  .hisImg-detail {
+    background-color: black;
+     background: url('./img/Djokovic.png') ;
+    flex: 1
+  }
+  
+  .detail-infos-gen {
+    flex: 2;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+  }
+  
+  .infos-career {
+    flex: 1
+  }
+  
+  .infos-career{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+  }
+  
+  .infos-gen-cols {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    height: 264px;
+  }
+
+  .detail-infos-gen-name {
+    font-family: 'Montserra', 'sans-serif' ;
+    font-weight: 600;
+    font-size: 88px;
+    color: #F2753B;
+  }
+
+  .infos-gen-col {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+  }
+
+
+  .infos-gen-col-bloc-label, .infos-career-details-title{
+    font-family: 'Mulish', 'sans-serif';
+    font-weight: 900;
+    opacity: 40%;
+    font-size: 15px;
+  }
+
+  .infos-gen-col-bloc-val, .infos-career-details-title-years, .tournaments {
+    font-family: 'Montserra', 'sans-serif' ;
+    font-weight: 700;
+    color: #F2753B;
+  }
+
+.infos-career-details-title-years{
+    font-size: 20px;
+}
+.tournaments {
+    font-family: 'Montserra', 'sans-serif' ;
+    font-weight: 200;
+    font-size: 17px;
+}
+
+.drapeauAndCodePays {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.drapeau-zone {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.drapeau {
+    background: url('./img/SerbieDrapeau.png') center center ;
+    height: 180px;
+}
+
+.codePays{
+    font-family: 'Mulish', 'sans-serif';
+    font-weight: 900;
+    opacity: 40%;
+    font-size: 60px;
+    text-align: center;
+}
+

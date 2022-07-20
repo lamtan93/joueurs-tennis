@@ -1,38 +1,103 @@
-.App {
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.root {
+  background-color: orange;
+  height: 100vh;
+  display: block;
+}
+
+.title {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.joueursTennisHomePage{
+  background: linear-gradient(45deg, orange, #bb6d61);
+  /* height: 100vh; */
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.joueursTennisView {
+  flex: flex;
+  flex-flow: column wrap;
+  margin: 0px 30px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.filters {
+  margin-top: 30px;
+  margin-bottom: 20px; 
+}
+
+
+
+.listeJoueurs {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-flow: column wrap;
+  gap: 20px;
+}
+
+
+.joueur {
+  width: 45%;
+  height: 200px;
+  display: flex;
+  flex-flow: row wrap;
+  gap: 30px;
+  background: white;
+}
+
+.hisImg {
+  flex: 1;
+  width: 100%;
+  /* background: url('./img/Djokovic.png') top center; */
+}
+
+.hisInfos {
+  flex: 3;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  padding: 0px 30px 0px 0px;
+}
+
+.details {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.searchByName input {
+  width: 45%;
+  height: 50px;
+  border-radius: 13px;
+  background: #000000;
+  opacity: 30%;
   color: white;
+  font-size: 18px;
+  padding: 17px;
 }
 
-.App-link {
-  color: #61dafb;
+.nameJoueur {
+  font-family: 'Montserra', 'sans-serif' ;
+  font-weight: 600;
+  font-size: 25px;
+  color: #F2753B;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.detail-category {
+  font-family: 'Mulish', 'sans-serif';
+  font-weight: 900;
+  opacity: 30%;
+  font-size: 15px;
 }
+
+.detail-val{
+  font-family: 'Montserra', 'sans-serif' ;
+  font-weight: 600;
+  color: #F2753B;
+}
+
