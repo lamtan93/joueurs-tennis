@@ -1,17 +1,24 @@
 import React from 'react';
 import PropType from 'prop-types';
+import { useNavigate, } from 'react-router-dom';
 
 const JoueurTennis = ({
     words,
     joueur,
 }) => {
+    const navigate = useNavigate();
+    const gotoDetailPage = () => {
+        navigate('/detailJoueur');
+    }
+
     const styleImg = {
         background: ` url(${joueur?.picture})top center `,
     }
+   
     return (
     <>
         <div style={styleImg} className='hisImg'> </div>
-        <div className='hisInfos'>
+        <div className='hisInfos' style={{cursor: 'pointer',}} onClick={() => gotoDetailPage()} >
             <div className='nameJoueur'>{`${joueur?.firstname} ${joueur?.lastname}`}</div>
             <div className='details'>
             <div className='detail-joueur '>

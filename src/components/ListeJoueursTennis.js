@@ -6,6 +6,7 @@ import PropType from 'prop-types';
 const ListeJoueursTennis = ({
     words,
     listJoueursData,
+    onClickPlayer,
 }) => {
     return (
         <>
@@ -23,6 +24,7 @@ const ListeJoueursTennis = ({
                    <JoueurTennis 
                     words={words}
                     joueur={joueur}
+                    onClickPlayer={onClickPlayer}
                    />
                 </div> 
             ))}    

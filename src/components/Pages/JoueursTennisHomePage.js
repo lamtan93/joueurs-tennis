@@ -29,6 +29,7 @@ class JoueursTennisHomePage extends React.Component {
             store.dispatch(fetchListJoueursDataError(error))
         })
     }
+    
     render(){
         return(
                 <div className='joueursTennisView'>
