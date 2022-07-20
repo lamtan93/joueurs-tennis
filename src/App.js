@@ -7,9 +7,7 @@ function App() {
             <Router>
               <Routes>
                   <Route path={'/listeJoueurs'} element={
-                  <div className='joueursTennisHomePage'>
                     <JoueursTennisHomePage />
-                  </div>
                   }></Route>
                   <Route path={'/detailJoueur'} element={ <JoueursTennisDetailHomePage />}></Route>
                   <Route path={'/'} element={<JoueursTennisHomePage/>} ></Route>

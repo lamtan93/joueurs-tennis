@@ -32,11 +32,13 @@ class JoueursTennisHomePage extends React.Component {
     
     render(){
         return(
+            <div className='joueursTennisHomePage'>
                 <div className='joueursTennisView'>
                     <JoueursTennisView 
                         words={joueursTennisDico}
                     />
                 </div>
+            </div>
         )
     }
 }
